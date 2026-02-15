@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - CODESCAPE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="grain"></div>
+      <div class="blur-blob"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="logo">
+        <img src="logo.png" alt="Codescape Logo" class="logo-img">
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="careers.html">Careers</a>
+        
+        <button class="cta small">FREE QUOTE</button>
+      </nav>
+    </header>
+
+    <section class="page-section">
+      <div class="section-header fade-in">
+        <h1 class="page-title">GET IN TOUCH</h1>
+        <p class="page-subtitle">We'd Love to Hear From You</p>
+      </div>
+
+      <div class="contact-container fade-in-delay-1">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h4>Location</h4>
+            <p>123 Digital Avenue<br>Tech City, TC 12345</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">💌</div>
+            <h4>Email</h4>
+            <p><a href="mailto:hello@codescape.com">hello@codescape.com</a></p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">☎️</div>
+            <h4>Phone</h4>
+            <p><a href="tel:+1(555)123-4567">+1 (555) 123-4567</a></p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in-delay-2">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="social-section fade-in-delay-3">
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+          el.classList.add('visible');
+        });
+        setTimeout(() => {
+          document.querySelectorAll('.fade-in-delay-1').forEach(el => {
+            el.classList.add('visible');
+          });
+        }, 200);
+        setTimeout(() => {
+          document.querySelectorAll('.fade-in-delay-2').forEach(el => {
+            el.classList.add('visible');
+          });
+        }, 400);
+        setTimeout(() => {
+          document.querySelectorAll('.fade-in-delay-3').forEach(el => {
+            el.classList.add('visible');
+          });
+        }, 600);
+      });
+
+      // Form submission handler
+      document.querySelector('.contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        e.target.reset();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODESCAPE - Digital Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="grain"></div>
+      <div class="blur-blob"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="logo">
+        <img src="logo.png" alt="Codescape Logo" class="logo-img">
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        
+        <button class="cta small">FREE QUOTE</button>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-card">
+        <div class="hero-top">
+          <button class="chip">Where Creativity Meets Technology!</button>
+          <div class="play">▶</div>
+        </div>
+
+        <h1 class="hero-title">WELCOME TO <span>CODESCPAE!</span></h1>
+        <p class="hero-sub">We believe a strong digital presence is the foundation of lasting success in today's connected world. Our passion lies in crafting visually compelling and strategically engineered websites and applications that don't just capture attention — they create meaningful impact. Every solution we build is designed to elevate brands, engage audiences, and deliver measurable results.</p>
+
+        <div class="hero-ctas">
+          <button class="btn primary" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">CONTACT US</button>
+          <button class="btn ghost" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">ABOUT US</button>
+        </div>
+
+        <div class="nodes">
+          <div class="node left"><br><span></span></div>
+          <div class="node right"><br><span></span></div>
+        </div>
+      </div>
+
+      <div class="partner-row">
+        <span>LOOM</span>
+        <span>HAI FOOD PRODUCTS</span>
+        <span>SJA</span>
+        <span>FERROCON</span>
+        <span>TBrew</span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="page-section" id="about">
+      <div class="section-header fade-in">
+        <h1 class="page-title">ABOUT CODESCAPE</h1>
+        <p class="page-subtitle">Crafting Digital Excellence Since Day One</p>
+      </div>
+
+      <div class="about-statement-container fade-in-delay-1">
+        <div class="about-illustration-wrapper">
+          <img src="illustration.svg" alt="Codescape Digital Innovation" class="about-illustration">
+        </div>
+        <div class="about-statement-text">
+          <p>We specialize in crafting captivating websites, seamless e-commerce solutions, and cutting-edge app developments. Our passion extends beyond code; it's about transforming ideas into immersive digital experiences.</p>
+          <p>Join us on a journey where innovation meets functionality, and your success becomes our mission. Your success is not just a goal; it's our commitment. At Codescape, we're not just a service provider; we're your digital partner, dedicated to transforming possibilities into realities.</p>
+        </div>
+      </div>
+
+      <div class="about-hero fade-in-delay-2">
+        <h2>WHY CHOOSE US?</h2>
+        
+        <div class="why-choose-container">
+          <!-- Buttons Section -->
+          <div class="why-choose-buttons">
+            <button class="why-choose-btn active" data-service="webdesign">
+              <span class="btn-icon">◇</span>
+              <span class="btn-text">Web Designing</span>
+            </button>
+            <button class="why-choose-btn" data-service="ecommerce">
+              <span class="btn-icon">◆</span>
+              <span class="btn-text">E-Commerce</span>
+            </button>
+            <button class="why-choose-btn" data-service="appdev">
+              <span class="btn-icon">◉</span>
+              <span class="btn-text">App Development</span>
+            </button>
+            <button class="why-choose-btn" data-service="marketing">
+              <span class="btn-icon">★</span>
+              <span class="btn-text">Digital Marketing</span>
+            </button>
+          </div>
+
+          <!-- Content Section -->
+          <div class="why-choose-content">
+            <!-- Illustration on Left -->
+            <div class="why-choose-illustration">
+              <div class="illustration-box" id="illustrationBox">
+                <svg class="illustration" id="webdesignIllustration" viewBox="0 0 400 300" style="display: block;">
+                  <rect x="30" y="30" width="340" height="240" fill="#e6e8ea" rx="10" stroke="#a8b1b9" stroke-width="3"/>
+                  <rect x="40" y="40" width="320" height="30" fill="#a8b1b9" rx="5"/>
+                  <circle cx="50" cy="55" r="4" fill="#0b0c0d"/>
+                  <circle cx="65" cy="55" r="4" fill="#0b0c0d"/>
+                  <circle cx="80" cy="55" r="4" fill="#0b0c0d"/>
+                  <line x1="40" y1="80" x2="360" y2="80" stroke="#d0d8e0" stroke-width="1"/>
+                  <line x1="40" y1="120" x2="360" y2="120" stroke="#d0d8e0" stroke-width="1"/>
+                  <line x1="40" y1="160" x2="360" y2="160" stroke="#d0d8e0" stroke-width="1"/>
+                  <rect x="50" y="85" width="300" height="25" fill="#c7d0d8" rx="3" opacity="0.6"/>
+                  <rect x="50" y="130" width="250" height="20" fill="#c7d0d8" rx="3" opacity="0.4"/>
+                  <rect x="50" y="165" width="280" height="20" fill="#c7d0d8" rx="3" opacity="0.4"/>
+                  <circle cx="200" cy="210" r="35" fill="#9aa0a6" opacity="0.3"/>
+                </svg>
+                
+                <svg class="illustration" id="ecommerceIllustration" viewBox="0 0 400 300" style="display: none;">
+                  <rect x="80" y="50" width="240" height="220" fill="#e6e8ea" rx="8" stroke="#a8b1b9" stroke-width="2"/>
+                  <path d="M 150 80 L 200 40 L 250 80 Z" fill="#d0d8e0" stroke="#a8b1b9" stroke-width="2"/>
+                  <rect x="110" y="100" width="60" height="60" fill="#c7d0d8" rx="4" stroke="#9aa0a6" stroke-width="1.5"/>
+                  <rect x="190" y="100" width="60" height="60" fill="#c7d0d8" rx="4" stroke="#9aa0a6" stroke-width="1.5"/>
+                  <rect x="110" y="180" width="60" height="30" fill="#a8b1b9" rx="4"/>
+                  <rect x="190" y="180" width="60" height="30" fill="#a8b1b9" rx="4"/>
+                  <text x="200" y="250" font-size="24" fill="#a8b1b9" text-anchor="middle">🛍️ Shop</text>
+                </svg>
+                
+                <svg class="illustration" id="appdevIllustration" viewBox="0 0 400 300" style="display: none;">
+                  <rect x="120" y="30" width="160" height="260" fill="#e6e8ea" rx="12" stroke="#a8b1b9" stroke-width="2"/>
+                  <rect x="125" y="40" width="150" height="30" fill="#a8b1b9" rx="5"/>
+                  <circle cx="205" cy="55" r="6" fill="#0b0c0d"/>
+                  <rect x="130" y="80" width="140" height="170" fill="#d0d8e0" rx="5"/>
+                  <circle cx="200" cy="130" r="20" fill="#c7d0d8" stroke="#9aa0a6" stroke-width="2"/>
+                  <line x1="150" y1="165" x2="250" y2="165" stroke="#9aa0a6" stroke-width="2"/>
+                  <line x1="150" y1="185" x2="250" y2="185" stroke="#9aa0a6" stroke-width="2"/>
+                  <rect x="140" y="210" width="120" height="25" fill="#a8b1b9" rx="3"/>
+                </svg>
+                
+                <svg class="illustration" id="marketingIllustration" viewBox="0 0 400 300" style="display: none;">
+                  <rect x="40" y="40" width="100" height="80" fill="#d0d8e0" rx="5" stroke="#a8b1b9" stroke-width="2"/>
+                  <line x1="50" y1="80" x2="50" y2="120" stroke="#a8b1b9" stroke-width="2"/>
+                  <line x1="70" y1="70" x2="70" y2="120" stroke="#a8b1b9" stroke-width="2"/>
+                  <line x1="90" y1="60" x2="90" y2="120" stroke="#a8b1b9" stroke-width="2"/>
+                  <line x1="110" y1="75" x2="110" y2="120" stroke="#a8b1b9" stroke-width="2"/>
+                  <line x1="130" y1="90" x2="130" y2="120" stroke="#a8b1b9" stroke-width="2"/>
+                  
+                  <rect x="200" y="50" width="150" height="20" fill="#c7d0d8" rx="3"/>
+                  <rect x="200" y="80" width="130" height="15" fill="#c7d0d8" rx="3" opacity="0.7"/>
+                  <rect x="200" y="105" width="150" height="15" fill="#c7d0d8" rx="3" opacity="0.5"/>
+                  
+                  <circle cx="200" cy="200" r="15" fill="#9aa0a6" stroke="#d0d8e0" stroke-width="2"/>
+                  <circle cx="260" cy="200" r="15" fill="#9aa0a6" stroke="#d0d8e0" stroke-width="2"/>
+                  <circle cx="140" cy="240" r="15" fill="#9aa0a6" stroke="#d0d8e0" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Statement on Right -->
+            <div class="why-choose-statement">
+              <div class="statement-content" id="statementContent">
+                <div class="statement-item active" data-service="webdesign">
+                  <h3>Web Designing</h3>
+                  <p>We create stunning, responsive websites that capture your brand's essence and engage your audience. Our design philosophy combines aesthetic appeal with user-centric functionality, ensuring every pixel serves a purpose. From concept to deployment, we craft digital experiences that convert visitors into loyal customers.</p>
+                  <ul class="statement-features">
+                    <li>✓ Responsive & Mobile-First Design</li>
+                    <li>✓ Modern UI/UX Principles</li>
+                    <li>✓ Fast Performance Optimization</li>
+                    <li>✓ SEO-Friendly Structure</li>
+                  </ul>
+                </div>
+                <div class="statement-item" data-service="ecommerce">
+                  <h3>E-Commerce Solutions</h3>
+                  <p>Build a powerful online store that drives sales and maximizes customer satisfaction. We develop robust e-commerce platforms with secure payment processing, inventory management, and analytics. Our solutions scale with your business, providing the foundation for sustainable growth and increased revenue streams.</p>
+                  <ul class="statement-features">
+                    <li>✓ Secure Payment Gateway Integration</li>
+                    <li>✓ Inventory Management System</li>
+                    <li>✓ Customer Analytics Dashboard</li>
+                    <li>✓ Multi-Channel Integration</li>
+                  </ul>
+                </div>
+                <div class="statement-item" data-service="appdev">
+                  <h3>App Development</h3>
+                  <p>Transform your ideas into innovative mobile applications that delight users. Whether iOS, Android, or cross-platform, we develop apps that are intuitive, performant, and feature-rich. Our development process focuses on user experience, security, and maintainability for long-term success.</p>
+                  <ul class="statement-features">
+                    <li>✓ Native iOS & Android Apps</li>
+                    <li>✓ Cross-Platform Development</li>
+                    <li>✓ Real-Time Functionality</li>
+                    <li>✓ Push Notifications & Analytics</li>
+                  </ul>
+                </div>
+                <div class="statement-item" data-service="marketing">
+                  <h3>Digital Marketing</h3>
+                  <p>Boost your online visibility and reach your target audience with strategic digital marketing campaigns. We combine data-driven insights with creative execution across social media, email, PPC, and content marketing. Our approach maximizes ROI while building authentic connections with your customers.</p>
+                  <ul class="statement-features">
+                    <li>✓ Social Media Marketing & Management</li>
+                    <li>✓ SEO & Content Strategy</li>
+                    <li>✓ PPC Advertising Campaigns</li>
+                    <li>✓ Email Marketing & Automation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="page-section" id="services">
+      <div class="section-header fade-in">
+        <h1 class="page-title">OUR SERVICES</h1>
+        <p class="page-subtitle">Comprehensive Solutions for Your Digital Needs</p>
+      </div>
+
+      <div class="services-grid fade-in-delay-1">
+        <div class="service-card scroll-fade">
+          <div class="service-icon">◇</div>
+          <h3>Web Design</h3>
+          <p>Beautiful, responsive websites that captivate and convert. We create designs that blend aesthetics with functionality.</p>
+          <div class="service-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+
+        <div class="service-card scroll-fade">
+          <div class="service-icon">⬡</div>
+          <h3>Web Development</h3>
+          <p>Robust and scalable web applications built with modern technologies and best practices for optimal performance.</p>
+          <div class="service-tags">
+            <span class="tag">Frontend</span>
+            <span class="tag">Backend</span>
+          </div>
+        </div>
+
+        <div class="service-card scroll-fade">
+          <div class="service-icon">◉</div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform mobile applications that deliver seamless user experiences on iOS and Android.</p>
+          <div class="service-tags">
+            <span class="tag">iOS</span>
+            <span class="tag">Android</span>
+          </div>
+        </div>
+
+        <div class="service-card scroll-fade">
+          <div class="service-icon">↗</div>
+          <h3>SEO Optimization</h3>
+          <p>Boost your online visibility with our strategic SEO services that improve rankings and drive organic traffic.</p>
+          <div class="service-tags">
+            <span class="tag">On-Page</span>
+            <span class="tag">Off-Page</span>
+          </div>
+        </div>
+
+        <div class="service-card scroll-fade">
+          <div class="service-icon">◆</div>
+          <h3>Digital Marketing</h3>
+          <p>Strategic campaigns across social media, email, and paid advertising to reach and engage your target audience.</p>
+          <div class="service-tags">
+            <span class="tag">Social Media</span>
+            <span class="tag">PPC</span>
+          </div>
+        </div>
+
+        <div class="service-card scroll-fade">
+          <div class="service-icon">★</div>
+          <h3>Branding</h3>
+          <p>Comprehensive branding strategies that create memorable identities and strengthen your market presence.</p>
+          <div class="service-tags">
+            <span class="tag">Logo Design</span>
+            <span class="tag">Brand Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-section fade-in-delay-2">
+        <h2>OUR PROCESS</h2>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h4>Discovery</h4>
+            <p>Understanding your goals and requirements</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h4>Strategy</h4>
+            <p>Planning the perfect approach</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h4>Design</h4>
+            <p>Creating beautiful interfaces</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h4>Delivery</h4>
+            <p>Launch and continuous support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="page-section" id="projects">
+      <div class="section-header fade-in">
+        <h1 class="page-title">OUR PROJECTS</h1>
+        <p class="page-subtitle">Showcasing Our Best Work and Success Stories</p>
+      </div>
+
+      <!-- Company Logo Grid -->
+      <div class="companies-carousel-section fade-in-delay-1">
+        <h2 class="carousel-title">Our Clients</h2>
+        <div class="carousel-wrapper">
+          <button class="carousel-nav-btn prev-btn" id="prevBtn" aria-label="Previous companies">
+            <span>&#10094;</span>
+          </button>
+          <div class="carousel-container">
+            <div class="companies-grid" id="companiesCarousel">
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="ferrocon-logo.png" alt="Ferrocon">
+            </div>
+            <p>FERROCON</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="haier-logo.png" alt="Haier Industries">
+            </div>
+            <p>HAIER INDUSTRIES</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="lister-logo.png" alt="Lister Medica">
+            </div>
+            <p>LISTER MEDICA</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="loom-logo.png" alt="Loom">
+            </div>
+            <p>LOOM</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="mivida-logo.png" alt="Mi Vida">
+            </div>
+            <p>MI VIDA</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="oace-logo.png" alt="Oace Orion">
+            </div>
+            <p>OACE ORION GROUP</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="sja-logo.png" alt="SJA">
+            </div>
+            <p>SJA</p>
+          </div>
+          <div class="company-item">
+            <div class="company-logo-box">
+              <img src="tbrew-logo.png" alt="Tbrew">
+            </div>
+            <p>TBREW</p>
+          </div>
+            </div>
+          </div>
+          <button class="carousel-nav-btn next-btn" id="nextBtn" aria-label="Next companies">
+            <span>&#10095;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="projects-grid fade-in-delay-1">
+        <div class="project-card">
+          <div class="project-preview">E-COMMERCE</div>
+          <h3>Modern E-Shop Platform</h3>
+          <p>A fully responsive e-commerce solution with advanced features including real-time inventory, payment gateway integration, and analytics dashboard.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">SAAS</div>
+          <h3>Project Management Tool</h3>
+          <p>An intuitive SaaS platform helping teams collaborate and manage projects efficiently with real-time updates and comprehensive reporting.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Tailwind</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">MOBILE</div>
+          <h3>Fitness Tracking App</h3>
+          <p>A feature-rich mobile application helping users track workouts, nutrition, and health metrics with AI-powered recommendations.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">ML</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">BRANDING</div>
+          <h3>Tech Startup Identity</h3>
+          <p>Complete brand identity including logo design, color palette, typography system, and comprehensive brand guidelines for a tech startup.</p>
+          <div class="project-tags">
+            <span class="tag">Design</span>
+            <span class="tag">Brand Strategy</span>
+            <span class="tag">UI Kit</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">CORPORATE</div>
+          <h3>Enterprise Portal</h3>
+          <p>Scalable enterprise solution providing secure access to company resources, communication tools, and document management system.</p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Java</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">MARKETING</div>
+          <h3>Creative Portfolio Site</h3>
+          <p>Stunning portfolio website showcasing creative work with smooth animations, interactive elements, and optimized performance.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Framer Motion</span>
+            <span class="tag">Three.js</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="stats-section fade-in-delay-2">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="page-section" id="contact">
+      <div class="section-header fade-in">
+        <h1 class="page-title">GET IN TOUCH</h1>
+        <p class="page-subtitle">We'd Love to Hear From You</p>
+      </div>
+
+      <div class="contact-container fade-in-delay-1">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h4>Location</h4>
+            <p>123 Digital Avenue<br>Tech City, TC 12345</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">💌</div>
+            <h4>Email</h4>
+            <p><a href="mailto:hello@codescape.com">hello@codescape.com</a></p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">☎️</div>
+            <h4>Phone</h4>
+            <p><a href="tel:+1(555)123-4567">+1 (555) 123-4567</a></p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <h4>Hours</h4>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in-delay-2">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="social-section fade-in-delay-3">
+        <h2>Connect With Us</h2>
+        <div class="social-links">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+    <script>
+      // Animation on scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('[class*="fade-in"]');
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight * 0.75) {
+            el.classList.add('visible');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('load', animateOnScroll);
+
+      // Form submission
+      document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        e.target.reset();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - CODESCAPE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="grain"></div>
+      <div class="blur-blob"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="logo">
+        <img src="logo.png" alt="Codescape Logo" class="logo-img">
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="careers.html">Careers</a>
+        
+        <button class="cta small">FREE QUOTE</button>
+      </nav>
+    </header>
+
+    <section class="page-section">
+      <div class="section-header fade-in">
+        <h1 class="page-title">Featured Projects</h1>
+        <p class="page-subtitle">Showcasing Our Best Work and Success Stories</p>
+      </div>
+
+      <div class="projects-grid fade-in-delay-1">
+        <div class="project-card">
+          <div class="project-preview">E-COMMERCE</div>
+          <h3>Modern E-Shop Platform</h3>
+          <p>A fully responsive e-commerce solution with advanced features including real-time inventory, payment gateway integration, and analytics dashboard.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">SAAS</div>
+          <h3>Project Management Tool</h3>
+          <p>An intuitive SaaS platform helping teams collaborate and manage projects efficiently with real-time updates and comprehensive reporting.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Tailwind</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">MOBILE</div>
+          <h3>Fitness Tracking App</h3>
+          <p>A feature-rich mobile application helping users track workouts, nutrition, and health metrics with AI-powered recommendations.</p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">ML</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">BRANDING</div>
+          <h3>Tech Startup Identity</h3>
+          <p>Complete brand identity including logo design, color palette, typography system, and comprehensive brand guidelines for a tech startup.</p>
+          <div class="project-tags">
+            <span class="tag">Design</span>
+            <span class="tag">Brand Strategy</span>
+            <span class="tag">UI Kit</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">CORPORATE</div>
+          <h3>Enterprise Portal</h3>
+          <p>Scalable enterprise solution providing secure access to company resources, communication tools, and document management system.</p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Java</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-preview">MARKETING</div>
+          <h3>Creative Portfolio Site</h3>
+          <p>Stunning portfolio website showcasing creative work with smooth animations, interactive elements, and optimized performance.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Framer Motion</span>
+            <span class="tag">Three.js</span>
+          </div>
+          <a href="#" class="project-link">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="stats-section fade-in-delay-2">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.fade-in').forEach(el => {
+          el.classList.add('visible');
+        });
+        setTimeout(() => {
+          document.querySelectorAll('.fade-in-delay-1').forEach(el => {
+            el.classList.add('visible');
+          });
+        }, 200);
+        setTimeout(() => {
+          document.querySelectorAll('.fade-in-delay-2').forEach(el => {
+            el.classList.add('visible');
+          });
+        }, 400);
+      });
+
+      // Project card hover effect
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px)';
+        });
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    </script>
+  </body>
+</html>
